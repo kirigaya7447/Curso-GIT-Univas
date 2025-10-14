@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    color: #fff;
+}
+
+.app-container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 220px;
+    background: #000;
+    padding: 24px 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 32px;
+    color: #1db954;
+}
+
+.sidebar nav a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+    display: block;
+    transition: color 0.2s;
+}
+
+.sidebar nav a:hover {
+    color: #fff;
+}
+
+.content {
+    flex: 1;
+    background: #181818;
+    padding: 32px 40px;
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.header input {
+    background: #282828;
+    border: none;
+    border-radius: 16px;
+    padding: 8px 16px;
+    color: #fff;
+    width: 250px;
+}
+
+.playlists {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+}
+
+.playlist {
+    background: #242424;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background 0.2s;
+}
+
+.playlist:hover {
+    background: #333;
+}
+
+.playlist img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.playlist-title {
+    font-weight: bold;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.playlist-desc {
+    color: #b3b3b3;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.player {
+    height: 80px;
+    background: #181818;
+    border-top: 1px solid #282828;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.player .song-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+    border-radius: 4px;
+}
+
+.player .controls {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.player .controls button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.player .controls button:hover {
+    color: #1db954;
+}
+
+.player .progress {
+    flex: 1;
+    margin: 0 32px;
+    height: 4px;
+    background: #282828;
+    border-radius: 2px;
+    position: relative;
+}
+
+.player .progress-bar {
+    width: 40%;
+    height: 100%;
+    background: #1db954;
+    border-radius: 2px;
+}

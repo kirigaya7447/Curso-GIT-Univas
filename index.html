@@ -1,7 +1,68 @@
-<html>
-    <body>
-        <h1>Curso de GIT</h1>
-        <p>O mentor não quis progrmar algo simples rápidão!</p>
-        <p>Ele pediu pro chatGPT!</p>
-    </body>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="main-content">
+            <aside class="sidebar">
+                <h2>Spotify</h2>
+                <nav>
+                    <a href="#">Início</a>
+                    <a href="#">Buscar</a>
+                    <a href="#">Sua Biblioteca</a>
+                </nav>
+            </aside>
+            <main class="content">
+                <div class="header">
+                    <h1>Boas-vindas!</h1>
+                    <input type="text" placeholder="Buscar músicas, artistas...">
+                </div>
+                <section class="playlists">
+                    <div class="playlist">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273e0e1e6e6e0e1e6e6e0e1e6e6" alt="Playlist 1">
+                        <div class="playlist-title">Top Brasil</div>
+                        <div class="playlist-desc">Os hits mais tocados do Brasil.</div>
+                    </div>
+                    <div class="playlist">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273b2e1e6e6b2e1e6e6b2e1e6e6" alt="Playlist 2">
+                        <div class="playlist-title">Pop Internacional</div>
+                        <div class="playlist-desc">O melhor do pop mundial.</div>
+                    </div>
+                    <div class="playlist">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273c3e1e6e6c3e1e6e6c3e1e6e6" alt="Playlist 3">
+                        <div class="playlist-title">Relax</div>
+                        <div class="playlist-desc">Músicas para relaxar e estudar.</div>
+                    </div>
+                    <div class="playlist">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273d4e1e6e6d4e1e6e6d4e1e6e6" alt="Playlist 4">
+                        <div class="playlist-title">Rock Clássico</div>
+                        <div class="playlist-desc">Os maiores clássicos do rock.</div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer class="player">
+            <div class="song-info">
+                <img src="https://i.scdn.co/image/ab67616d0000b273e0e1e6e6e0e1e6e6e0e1e6e6" alt="Capa da música">
+                <div>
+                    <div style="font-weight:bold;">Nome da Música</div>
+                    <div style="color:#b3b3b3; font-size:0.95rem;">Artista</div>
+                </div>
+            </div>
+            <div class="controls">
+                <button title="Anterior">⏮️</button>
+                <button title="Play/Pause">▶️</button>
+                <button title="Próxima">⏭️</button>
+            </div>
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+        </footer>
+    </div>
+</body>
 </html>
